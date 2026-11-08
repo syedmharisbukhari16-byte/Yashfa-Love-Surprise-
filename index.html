@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Special Gift for Yashwa ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,serif;background:linear-gradient(145deg,#fff0f5,#ffe0eb,#fff7f0);color:#713c50;text-align:center}
+header{padding:65px 18px 35px}
+h1{font-size:clamp(34px,9vw,55px);color:#c04472;margin:15px 0}
+h2{color:#b64b76}
+p{line-height:1.8}
+button{border:0;border-radius:30px;background:#c94e7b;color:white;padding:14px 25px;font-size:16px;cursor:pointer;margin:10px}
+section{padding:35px 20px;max-width:700px;margin:20px auto}
+.card{background:#ffffffd9;border-radius:22px;padding:25px;margin:18px 0;box-shadow:0 8px 25px #c66b8420}
+.heart{font-size:48px;animation:pulse 1.3s infinite}
+@keyframes pulse{50%{transform:scale(1.2)}}
+#letter{display:none;text-align:left;white-space:pre-line}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photo{min-height:130px;border:2px dashed #d98ba9;border-radius:15px;display:grid;place-items:center;background:#fff5f8;padding:12px}
+footer{padding:35px;color:#a04a6c}
+</style>
+</head>
+<body>
+<header>
+<div class="heart">💝</div>
+<p>A LITTLE SURPRISE MADE WITH LOVE</p>
+<h1>For Yashwa ❤️</h1>
+<p>Someone special deserves something special...</p>
+<button onclick="openGift()">Open Your Gift 🎁</button>
+<div id="welcome" style="display:none" class="card">
+<h2>Surprise! 🌹</h2>
+<p>Welcome to your little world of beautiful memories.</p>
+<a href="#memories"><button>Explore Our Memories</button></a>
+</div>
+</header>
+<section>
+<div class="card">
+<h2>A Message For You 💌</h2>
+<p>You make ordinary moments feel special. This little website is a reminder of how much you are appreciated.</p>
+<button onclick="showLetter()">Read My Letter ❤️</button>
+<div id="letter">
+Dear Yashwa,
+
+You are a beautiful part of my story.
+Every little memory has its own special place.
+Thank you for the happiness, kindness and wonderful moments.
+
+May our days always be filled with smiles,
+understanding, laughter and countless beautiful memories.
+
+With love,
+Your Haris ❤️
+</div>
+</div>
+</section>
+<section id="memories">
+<h2>Our Beautiful Memories 📸</h2>
+<p>A little gallery for our favourite moments.</p>
+<div class="gallery">
+<div class="photo">📷<br>Your Photo 1</div>
+<div class="photo">📷<br>Your Photo 2</div>
+<div class="photo">📷<br>Your Photo 3</div>
+<div class="photo">📷<br>Your Photo 4</div>
+</div>
+<p><small>We will add your personal photos here in the next step.</small></p>
+</section>
+<section>
+<div class="card">
+<div class="heart">🌷</div>
+<h2>One Special Wish</h2>
+<p>May your life always be full of happiness, peace and beautiful surprises.</p>
+<h2>Forever Special, Yashwa ❤️</h2>
+</div>
+</section>
+<footer>
+Made with ❤️ by Haris<br>
+A little website, a special memory.
+</footer>
+<script>
+function openGift(){
+document.getElementById('welcome').style.display='block';
+document.getElementById('welcome').scrollIntoView({behavior:'smooth'});
+}
+function showLetter(){
+const letter=document.getElementById('letter');
+letter.style.display=letter.style.display==='block'?'none':'block';
+}
+</script>
+</body>
+</html>
